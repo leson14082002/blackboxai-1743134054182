@@ -1,0 +1,20 @@
+{
+  "name": "user-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwindcss -i ./css/main.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./css/main.css -o ./dist/output.css --watch",
+    "start": "npm run watch",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.17"
+  }
+}
