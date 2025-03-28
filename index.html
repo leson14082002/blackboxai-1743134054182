@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Clone</title>
+    <link rel="icon" href="https://www.tesla.com/themes/custom/tesla_frontend/assets/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Tesla red color */
+        .tesla-red {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-900">
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Tesla Logo -->
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold">TESLA</a>
+                </div>
+                
+                <!-- Main Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#model-s" class="text-sm font-medium">Model S</a>
+                    <a href="#model-3" class="text-sm font-medium">Model 3</a>
+                    <a href="#model-x" class="text-sm font-medium">Model X</a>
+                    <a href="#model-y" class="text-sm font-medium">Model Y</a>
+                    <a href="#cybertruck" class="text-sm font-medium">Cybertruck</a>
+                    <a href="#powerwall" class="text-sm font-medium">Powerwall</a>
+                </div>
+                
+                <!-- Right Menu -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-sm font-medium">Shop</a>
+                    <a href="#" class="text-sm font-medium">Account</a>
+                    <button class="md:hidden">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="h-screen pt-16 bg-black text-white bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop')] bg-cover bg-center">
+            <div class="h-full flex flex-col justify-between pb-20">
+                <div class="text-center pt-32">
+                    <h1 class="text-4xl font-bold mb-2">Model Y</h1>
+                    <p class="text-lg">Lease starting at $399/mo</p>
+                </div>
+                <div class="text-center space-x-4">
+                    <button class="tesla-red text-white px-8 py-2 rounded-md">
+                        Order Now
+                    </button>
+                    <button class="bg-white/70 text-black px-8 py-2 rounded-md">
+                        Demo Drive
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model 3 Section -->
+        <section id="model-3" class="h-screen bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-3-Desktop-LHD')] bg-cover bg-center">
+            <div class="h-full flex flex-col justify-between py-32 pb-20">
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold">Model 3</h2>
+                    <p class="text-lg">From $29,740*</p>
+                    <p class="text-sm mt-1">*After Federal Tax Credit</p>
+                </div>
+                <div class="text-center space-x-4">
+                    <button class="tesla-red text-white px-8 py-2 rounded-md">
+                        Order Now
+                    </button>
+                    <button class="bg-white/70 text-black px-8 py-2 rounded-md">
+                        Demo Drive
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model S Section -->
+        <section id="model-s" class="h-screen bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-S-Desktop-LHD')] bg-cover bg-center">
+            <div class="h-full flex flex-col justify-between py-32 pb-20">
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold">Model S</h2>
+                    <p class="text-lg">From $71,090*</p>
+                    <p class="text-sm">After Federal Tax Credit</p>
+                </div>
+                <div class="text-center space-x-4">
+                    <button class="tesla-red text-white px-8 py-2 rounded-md">
+                        Order Now
+                    </button>
+                    <button class="bg-white/70 text-black px-8 py-2 rounded-md">
+                        Demo Drive
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model X Section -->
+        <section id="model-x" class="h-screen bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD')] bg-cover bg-center">
+            <div class="h-full flex flex-col justify-between py-32 pb-20">
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold">Model X</h2>
+                    <p class="text-lg">From $68,590*</p>
+                    <p class="text-sm">After Federal Tax Credit</p>
+                </div>
+                <div class="text-center space-x-4">
+                    <button class="tesla-red text-white px-8 py-2 rounded-md">
+                        Order Now
+                    </button>
+                    <button class="bg-white/70 text-black px-8 py-2 rounded-md">
+                        Demo Drive
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cybertruck Section -->
+        <section id="cybertruck" class="h-screen bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Cybertruck-Desktop-Global')] bg-cover bg-center">
+            <div class="h-full flex flex-col justify-between py-32 pb-20">
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold">Cybertruck</h2>
+                    <p class="text-lg">Lease starting at $499/mo</p>
+                </div>
+                <div class="text-center space-x-4">
+                    <button class="tesla-red text-white px-8 py-2 rounded-md">
+                        Order Now
+                    </button>
+                    <button class="bg-white/70 text-black px-8 py-2 rounded-md">
+                        Demo Drive
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black text-white py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold mb-4">Vehicles</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#">Model S</a></li>
+                            <li><a href="#">Model 3</a></li>
+                            <li><a href="#">Model X</a></li>
+                            <li><a href="#">Model Y</a></li>
+                            <li><a href="#">Cybertruck</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold mb-4">Energy</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#">Solar Panels</a></li>
+                            <li><a href="#">Solar Roof</a></li>
+                            <li><a href="#">Powerwall</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold mb-4">Support</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Find Us</a></li>
+                            <li><a href="#">Updates</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold mb-4">Company</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-800 text-sm text-gray-400">
+                    <p>Tesla © 2023</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
